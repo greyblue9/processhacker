@@ -374,6 +374,10 @@
       <Project>{477d0215-f252-41a1-874b-f27e3ea1ed17}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <AssemblyReference Include="System.Windows.Forms">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <SubType>Designer</SubType>
+    </AssemblyReference>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="peview.manifest" />

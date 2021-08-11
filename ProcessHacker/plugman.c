@@ -29,6 +29,8 @@
 #include <phplug.h>
 #include <phsettings.h>
 
+#include "../sdk/include/phbasesup.h"
+
 #define WM_PH_PLUGINS_SHOWDIALOG (WM_APP + 401)
 #define WM_PH_PLUGINS_SHOWPROPERTIES (WM_APP + 402)
 
@@ -215,8 +217,11 @@ PPH_PLUGIN_TREE_ROOT_NODE AddPluginsNode(
     pluginNode->InternalName = PhCreateString2(&Plugin->Name);
     pluginNode->Name = PhCreateString(Plugin->Information.DisplayName);
     pluginNode->Author = PhCreateString(Plugin->Information.Author);
-    pluginNode->Description = PhCreateString(Plugin->Information.Description);
-
+    if (Plugin->Information.Description) {
+        pluginNode->Description = PhCreateString(Plugin->Information.Description);
+    } else {
+        pluginNode->Description = PhCreateString(L"");
+    }
     if (fileName = PhGetPluginFileName(Plugin))
     {
         if (PhInitializeImageVersionInfo(&versionInfo, fileName->Buffer))
