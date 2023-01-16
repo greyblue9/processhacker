@@ -13,6 +13,13 @@
     <OldToolsVersion>Current</OldToolsVersion>
     <Version>1.0</Version>
     <ProjectGuid>{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}</ProjectGuid>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PublishSingleFile>false</PublishSingleFile>
+    <DisablePackageAssetsCache>true</DisablePackageAssetsCache>
+    <VerifyMatchingImplicitPackageVersion>false</VerifyMatchingImplicitPackageVersion>
+    <ProjectAssetsFile></ProjectAssetsFile>
+    <IsSelfContained>true</IsSelfContained>
+    <MarkPackageReferencesAsExternallyResolved>true</MarkPackageReferencesAsExternallyResolved>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)'=='x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -47,5 +54,8 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Properties\PublishProfiles\32bit.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DumpExtensions" Version="2.0.0" />
   </ItemGroup>
 </Project>

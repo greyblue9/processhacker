@@ -6,11 +6,20 @@ MinimumVisualStudioVersion = 15.0.26228.4
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcessHacker", "ProcessHacker\ProcessHacker.vcxproj", "{0271DD27-6707-4290-8DFE-285702B7115D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{477D0215-F252-41A1-874B-F27E3EA1ED17} = {477D0215-F252-41A1-874B-F27E3EA1ED17}
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3} = {CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "phlib", "phlib\phlib.vcxproj", "{477D0215-F252-41A1-874B-F27E3EA1ED17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3} = {CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peview", "tools\peview\peview.vcxproj", "{72C124A2-3C80-41C6-ABA1-C4948B713204}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3} = {CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomBuildTool", "tools\CustomBuildTool\CustomBuildTool.csproj", "{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +79,16 @@ Global
 		{72C124A2-3C80-41C6-ABA1-C4948B713204}.Release|x64.ActiveCfg = Release|x64
 		{72C124A2-3C80-41C6-ABA1-C4948B713204}.Release|x64.Build.0 = Release|x64
 		{72C124A2-3C80-41C6-ABA1-C4948B713204}.Release|x64.Deploy.0 = Release|x64
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Debug|ARM64.ActiveCfg = Debug|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Debug|Win32.ActiveCfg = Debug|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Debug|Win32.Build.0 = Debug|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Debug|x64.ActiveCfg = Debug|x64
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Debug|x64.Build.0 = Debug|x64
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Release|ARM64.ActiveCfg = Release|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Release|Win32.ActiveCfg = Release|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Release|Win32.Build.0 = Release|x86
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Release|x64.ActiveCfg = Release|x64
+		{CD644DF2-A658-4CBC-9497-CA5DD13CFEC3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

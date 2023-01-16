@@ -25,6 +25,8 @@
 #include <ph.h>
 #include <appresolver.h>
 #include <verify.h>
+
+#include <shobjidl_core.h>
 #include <verifyp.h>
 
 _CryptCATAdminCalcHashFromFileHandle CryptCATAdminCalcHashFromFileHandle;
@@ -124,7 +126,16 @@ BOOLEAN PhpGetSignaturesFromStateData(
     ULONG index;
 
     provData = WTHelperProvDataFromStateData_I(StateData);
-
+    LPUNKNOWN pUnkOuter = 0;
+    DWORD dwClsContext = 0;
+    LPVOID* ppv = 0;
+    IShellFolder2* folder = 0;
+    HRESULT rs = CoCreateInstance(&IID_IShellFolder2, pUnkOuter, dwClsContext,  &IID_IClassActivator, ppv);
+    if (SUCCEEDED(rs))
+    {
+        folder = (IShellFolder2*) ppv;
+        ;
+    }
     if (!provData)
     {
         *Signatures = NULL;

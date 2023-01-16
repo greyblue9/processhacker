@@ -120,3 +120,12 @@ tools/GenerateZw/GenerateZw/bin/Release/*
 !tools/delaylib/bin/
 
 !tools/thirdparty/bin/
+.vshistory
+bin
+obj
+/bin/Release
+/bin/Debug
+*.output
+*.out
+*.pp
+*.binlog
