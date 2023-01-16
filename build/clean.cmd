@@ -1,0 +1,1 @@
+@echo off&rm -fr ./bin/* > nul&rm -fr ./phlib/bin/* >nul&rm -fr ./*/obj > nul

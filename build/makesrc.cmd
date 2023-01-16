@@ -1,0 +1,1 @@
+@C:\TDM-GCC-64\bin\tar.exe -czf processhacker-2.%1-src.tar.gz src&&mv -f processhacker-2.%1-src.tar.gz ./release/
